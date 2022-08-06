@@ -4,25 +4,34 @@
 // Hero with background image
 //------------------------------------------------
 
-.hero-w-bg {
-  position: relative;
-  top: -200px;
-  z-index: -1;
-
-  min-height: 100vh;
-
+.hero-header-bg-container {
   background-image: url(images/desktop/image-hero.jpg);
   background-size: cover;
+}
+
+.hero-w-bg {
+  // position: relative;
+  // top: -200px;
+  // z-index: -1;
+
+  // min-height: 100vh;
+
+  min-height: 80vh;
+
+  // background-image: url(images/desktop/image-hero.jpg);
+  // background-size: cover;
 
   display: flex;
   align-items: center;
+
+  margin-bottom: 8rem;
 }
 
 .hero-w-bg h1 {
   display: inline-block;
 
-  position: relative;
-  bottom: -100px;
+  // position: relative;
+  // bottom: -100px;
 
   font-size: var(--fs-hero);
   font-family: var(--ff-header);

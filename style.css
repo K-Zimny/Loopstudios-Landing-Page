@@ -93,7 +93,7 @@ select {
 }
 
 .img-w-offset-text-grid {
-  margin: -2rem 0 8rem 0;
+  margin: 0 0 8rem 0;
 }
 
 .img-w-offset-text-grid .grid-container {
@@ -158,21 +158,20 @@ select {
     margin-bottom: 1rem;
   }
 }
-.hero-w-bg {
-  position: relative;
-  top: -200px;
-  z-index: -1;
-  min-height: 100vh;
+.hero-header-bg-container {
   background-image: url(images/desktop/image-hero.jpg);
   background-size: cover;
+}
+
+.hero-w-bg {
+  min-height: 80vh;
   display: flex;
   align-items: center;
+  margin-bottom: 8rem;
 }
 
 .hero-w-bg h1 {
   display: inline-block;
-  position: relative;
-  bottom: -100px;
   font-size: var(--fs-hero);
   font-family: var(--ff-header);
   font-weight: var(--fw-header);
@@ -187,7 +186,7 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .nav .logo-container {
