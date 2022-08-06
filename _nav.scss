@@ -1,0 +1,41 @@
+//------------------------------------------------
+// Navigation
+//------------------------------------------------
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+//--------------------
+
+.nav .logo-container {
+  padding: 0;
+}
+.nav img {
+  object-fit: contain;
+}
+
+//--------------------
+
+.nav ul {
+  display: flex;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav a {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  color: hsl(var(--clr-white));
+
+  text-decoration: none;
+
+  padding: 2rem;
+}
+
+//--------------------

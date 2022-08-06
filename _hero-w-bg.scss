@@ -1,0 +1,39 @@
+@use "_utilities";
+
+//------------------------------------------------
+// Hero with background image
+//------------------------------------------------
+
+.hero-w-bg {
+  position: relative;
+  top: -200px;
+  z-index: -1;
+
+  min-height: 100vh;
+
+  background-image: url(images/desktop/image-hero.jpg);
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-w-bg h1 {
+  display: inline-block;
+
+  position: relative;
+  bottom: -100px;
+
+  font-size: var(--fs-hero);
+  font-family: var(--ff-header);
+  font-weight: var(--fw-header);
+  color: hsl(var(--clr-white));
+
+  text-transform: uppercase;
+
+  padding: 3rem 10rem 3rem 3rem;
+
+  line-height: 5rem;
+
+  border: 3px solid hsl(var(--clr-white));
+}
