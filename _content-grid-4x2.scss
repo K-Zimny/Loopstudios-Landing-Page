@@ -1,0 +1,127 @@
+//------------------------------------------------
+// Content Grid 4 x 2 header content
+//------------------------------------------------
+
+.content-grid-4x2 {
+  margin-bottom: 10rem;
+}
+
+//----------------------
+
+.content-grid-4x2 .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 5rem;
+}
+
+.content-grid-4x2 .header-container h2 {
+  font-family: var(--ff-header);
+  font-size: var(--fs-header);
+  font-weight: var(--fw-header);
+  text-transform: uppercase;
+
+  line-height: 4rem;
+}
+
+.content-grid-4x2 .header-container a {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-body);
+  color: hsl(var(--clr-black));
+
+  text-decoration: none;
+
+  border: 1px solid hsl(var(--clr-black));
+  padding: 0.5rem 2.5rem;
+}
+
+//------------------------------------------------
+// Content Grid 4 x 2
+//------------------------------------------------
+
+.content-grid-4x2 .content-container ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+
+  padding: 0;
+}
+
+.content-grid-4x2 .content-container li {
+  list-style: none;
+}
+
+.content-grid-4x2 .content-container li a {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  min-height: 600px;
+
+  font-family: var(--ff-header);
+  font-size: var(--fs-sub-header);
+  font-weight: var(--fw-header);
+  color: hsl(var(--clr-white));
+
+  padding: 2rem;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+
+.content-grid-4x2 .content-container li a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: hsl(var(--clr-black));
+  opacity: 0.35;
+  z-index: -1;
+}
+
+//------------------------
+
+.content-grid-4x2 .content-container li:first-of-type a {
+  background-image: url(images/desktop/image-deep-earth.jpg);
+  background-size: cover;
+}
+
+.content-grid-4x2 .content-container li:nth-of-type(2) a {
+  background-image: url(images/desktop/image-night-arcade.jpg);
+  background-size: cover;
+}
+
+.content-grid-4x2 .content-container li:nth-of-type(3) a {
+  background-image: url(images/desktop/image-soccer-team.jpg);
+  background-size: cover;
+}
+
+.content-grid-4x2 .content-container li:nth-of-type(4) a {
+  background-image: url(images/desktop/image-grid.jpg);
+  background-size: cover;
+}
+
+.content-grid-4x2 .content-container li:nth-of-type(5) a {
+  background-image: url(images/desktop/image-from-above.jpg);
+  background-size: cover;
+}
+
+.content-grid-4x2 .content-container li:nth-of-type(6) a {
+  background-image: url(images/desktop/image-pocket-borealis.jpg);
+  background-size: cover;
+}
+
+.content-grid-4x2 .content-container li:nth-of-type(7) a {
+  background-image: url(images/desktop/image-curiosity.jpg);
+  background-size: cover;
+}
+
+.content-grid-4x2 .content-container li:nth-of-type(8) a {
+  background-image: url(images/desktop/image-fisheye.jpg);
+  background-size: cover;
+}

@@ -7,6 +7,15 @@
 .hero-header-bg-container {
   background-image: url(images/desktop/image-hero.jpg);
   background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: hsl(var(--clr-black));
+    opacity: 0.5;
+  }
 }
 
 .hero-w-bg {
@@ -25,6 +34,8 @@
   align-items: center;
 
   margin-bottom: 8rem;
+
+  position: relative;
 }
 
 .hero-w-bg h1 {
