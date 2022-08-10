@@ -57,3 +57,22 @@
 
   border: 3px solid hsl(var(--clr-white));
 }
+
+//------------------------------------------------
+// Media Queries
+//------------------------------------------------
+
+@media (max-width: 1024px) {
+  .hero-bg-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-w-bg h1 {
+    font-size: var(--fs-hero-mobile);
+    line-height: 3rem;
+
+    padding: 2rem;
+  }
+}

@@ -11,7 +11,8 @@
 .content-grid-4x2 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  gap: 1rem;
 
   margin-bottom: 5rem;
 }
@@ -124,4 +125,32 @@
 .content-grid-4x2 .content-container li:nth-of-type(8) a {
   background-image: url(images/desktop/image-fisheye.jpg);
   background-size: cover;
+}
+
+//------------------------------------------------
+// Media Queries
+//------------------------------------------------
+
+@media (max-width: 1024px) {
+  .content-grid-4x2 .content-container ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .content-grid-4x2 .header-container {
+    flex-direction: column;
+  }
+
+  .content-grid-4x2 .header-container h2 {
+    font-size: var(--fs-header-mobile);
+  }
+
+  .content-grid-4x2 .content-container ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content-grid-4x2 .content-container li a {
+    min-height: 200px;
+  }
 }
