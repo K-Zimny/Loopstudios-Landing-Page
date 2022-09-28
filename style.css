@@ -1,3 +1,21 @@
+:root {
+  --clr-white: 0, 0%, 100%;
+  --clr-black: 0, 0%, 0%;
+  --clr-dark: 0, 0%, 55%;
+  --clr-very-dark: 0, 0%, 41%;
+  --fs-hero: 5rem;
+  --fs-hero-mobile: 2.2rem;
+  --fs-header: 4rem;
+  --fs-header-mobile: 2.25rem;
+  --fs-sub-header: 2rem;
+  --fs-nav-mobile: 2.5rem;
+  --fs-body: 1rem;
+  --fw-header: 300;
+  --fw-body: 400;
+  --ff-header: "Josefin Sans", sans-serif;
+  --ff-body: "Alata", sans-serif;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -75,24 +93,6 @@ select {
   max-width: 1440px;
   width: 95%;
   margin-inline: auto;
-}
-
-:root {
-  --clr-white: 0, 0%, 100%;
-  --clr-black: 0, 0%, 0%;
-  --clr-dark: 0, 0%, 55%;
-  --clr-very-dark: 0, 0%, 41%;
-  --fs-hero: 5rem;
-  --fs-hero-mobile: 2.2rem;
-  --fs-header: 4rem;
-  --fs-header-mobile: 2.25rem;
-  --fs-sub-header: 2rem;
-  --fs-nav-mobile: 2.5rem;
-  --fs-body: 1rem;
-  --fw-header: 300;
-  --fw-body: 400;
-  --ff-header: "Josefin Sans", sans-serif;
-  --ff-body: "Alata", sans-serif;
 }
 
 .img-w-offset-text-grid {
@@ -238,7 +238,7 @@ header {
   font-size: var(--fs-body);
   color: hsl(var(--clr-white));
   text-decoration: none;
-  padding: 2rem;
+  padding: 2.8rem;
 }
 
 .nav .nav-toggle {
@@ -246,7 +246,7 @@ header {
 }
 
 @media (max-width: 1024px) {
-  .nav.hidden {
+  .nav.shown {
     position: fixed;
     background: black;
     inset: 0;
@@ -258,10 +258,13 @@ header {
   .nav .logo-container {
     padding-left: 2rem;
   }
+  .nav.shown .logo-container {
+    padding-left: 2.8rem;
+  }
   .nav ul {
     display: none;
   }
-  .nav ul.hidden {
+  .nav ul.shown {
     display: block;
     flex-direction: column;
     position: absolute;
@@ -496,6 +499,35 @@ header {
   font-size: var(--fs-body);
   font-weight: var(--fw-body);
   color: hsl(var(--clr-very-dark));
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .logo-nav-container img {
+    width: 100%;
+  }
+  .footer .nav-container {
+    margin-bottom: 2rem;
+  }
+  .footer .nav-container ul {
+    flex-direction: column;
+  }
+  .footer .nav-container li {
+    text-align: center;
+  }
+  .footer .nav-container li:first-of-type a {
+    padding-left: 1rem;
+  }
+  .footer .nav-container li {
+    margin-bottom: 1rem;
+  }
+  .footer .social-cr-container {
+    gap: 1rem;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

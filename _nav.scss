@@ -41,7 +41,7 @@ header {
 
   text-decoration: none;
 
-  padding: 2rem;
+  padding: 2.8rem;
 }
 
 .nav .nav-toggle {
@@ -51,7 +51,7 @@ header {
 //--------------------
 
 @media (max-width: 1024px) {
-  .nav.hidden {
+  .nav.shown {
     position: fixed;
     background: black;
     inset: 0;
@@ -66,11 +66,15 @@ header {
     padding-left: 2rem;
   }
 
+  .nav.shown .logo-container {
+    padding-left: 2.8rem;
+  }
+
   .nav ul {
     display: none;
   }
 
-  .nav ul.hidden {
+  .nav ul.shown {
     display: block;
     flex-direction: column;
 
