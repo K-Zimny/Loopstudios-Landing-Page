@@ -88,3 +88,26 @@ select {
   width: 95%;
   margin-inline: auto;
 }
+
+//------------------------------------------------
+// Hover, active, focus state for classes
+//------------------------------------------------
+
+.nav a,
+.footer .nav-container a,
+.footer .social-cr-container .social a {
+  position: relative;
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0.7rem;
+    background-color: hsl(var(--clr-white));
+    width: 45%;
+    height: 4px;
+  }
+}

@@ -17,7 +17,7 @@ navToggle.addEventListener("click", function () {
 
 const buttonContentGrid4x2 = document.getElementById("content-grid-4x2-button");
 const buttonLocationContentGrid4x2Before = document.getElementById(
-  "content-grid-4x2-button-relocation-before"
+  "content-grid-4x2-button-relocation"
 );
 const buttonLocationContentGrid4x2After = document.getElementById(
   "content-grid-4x2-button-relocation-after"
