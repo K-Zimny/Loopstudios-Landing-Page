@@ -24,8 +24,6 @@
   text-transform: uppercase;
 
   line-height: 4rem;
-
-  margin: auto;
 }
 
 .content-grid-4x2 #content-grid-4x2-button {
@@ -148,6 +146,10 @@
 //------------------------------------------------
 
 @media (max-width: 1024px) {
+  .content-grid-4x2 .header-container h2 {
+    margin: auto;
+  }
+
   .content-grid-4x2 .content-container ul {
     grid-template-columns: repeat(2, 1fr);
   }
